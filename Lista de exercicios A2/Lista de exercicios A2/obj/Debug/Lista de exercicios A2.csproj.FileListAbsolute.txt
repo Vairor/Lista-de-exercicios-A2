@@ -1,0 +1,7 @@
+C:\Users\vaivai\source\repos\Lista de exercicios A2\Lista de exercicios A2\obj\Debug\Lista de exercicios A2.csprojAssemblyReference.cache
+C:\Users\vaivai\source\repos\Lista de exercicios A2\Lista de exercicios A2\obj\Debug\Lista de exercicios A2.csproj.CoreCompileInputs.cache
+C:\Users\vaivai\source\repos\Lista de exercicios A2\Lista de exercicios A2\bin\Debug\Lista de exercicios A2.exe.config
+C:\Users\vaivai\source\repos\Lista de exercicios A2\Lista de exercicios A2\bin\Debug\Lista de exercicios A2.exe
+C:\Users\vaivai\source\repos\Lista de exercicios A2\Lista de exercicios A2\bin\Debug\Lista de exercicios A2.pdb
+C:\Users\vaivai\source\repos\Lista de exercicios A2\Lista de exercicios A2\obj\Debug\Lista de exercicios A2.exe
+C:\Users\vaivai\source\repos\Lista de exercicios A2\Lista de exercicios A2\obj\Debug\Lista de exercicios A2.pdb
