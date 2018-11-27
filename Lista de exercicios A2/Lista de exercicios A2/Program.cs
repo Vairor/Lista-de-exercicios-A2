@@ -8,23 +8,7 @@ namespace ListaA2
 {
     class Program
     {
-        {
-        static void Troca(int[] vetor, int pos1, int pos2)
-        {
-            int aux = 0;
-            aux = vetor[pos1];
-            vetor[pos1] = vetor[pos2];
-            vetor[pos2] = aux;
 
-        }
-        static void Imprime(int[] vetor)
-        {
-            for (int i = 0; i < vetor.Length; i++)
-                Console.Write(vetor[i] + " ");
-
-
-
-        }
 
         public class Conta
         {
@@ -62,6 +46,64 @@ namespace ListaA2
         {
 
             //Exercicio 01
+            string strquatrodigitos = "";
+            int intquatrodigitos = 0;
+            int unidade = 0;
+            int dezena = 0;
+            int centena = 0;
+            int unidadeDeMilhar = 0;
+            int restoDivisao = 0;
+            int quociente = 0;
+            const int DECIMAL = 10;
+
+            Console.WriteLine("Por favor digite um inteiro de 4 digitos.");
+            strquatrodigitos = Console.ReadLine();
+
+            if (strquatrodigitos.Contains(" "))
+            {
+            espaço:
+                Console.Clear();
+                Console.WriteLine("Sem usar espaço, meu anjo.");
+                Console.WriteLine("Por favor digite um inteiro de 4 digitos.");
+                strquatrodigitos = Console.ReadLine();
+                if (strquatrodigitos.Contains(" "))
+                    goto espaço;
+            }
+            else if (strquatrodigitos.Contains("abcdefghijklmnopqrstuvxwyz"))
+            {
+            vogcons:
+                Console.Clear();
+                Console.WriteLine("Sem usar letras, cara.");
+                Console.WriteLine("Por favor digite um inteiro de 4 digitos.");
+                strquatrodigitos = Console.ReadLine();
+                if (strquatrodigitos.Contains(" "))
+                    goto vogcons;
+            }
+            else
+            {
+                intquatrodigitos = Convert.ToInt32(strquatrodigitos);
+
+                restoDivisao = intquatrodigitos % DECIMAL;
+                quociente = intquatrodigitos / DECIMAL;
+                unidade = restoDivisao;
+
+                restoDivisao = quociente % DECIMAL;
+                quociente = quociente / DECIMAL;
+                dezena = restoDivisao;
+
+                restoDivisao = quociente % DECIMAL;
+                quociente = quociente / DECIMAL;
+                centena = restoDivisao;
+
+                restoDivisao = quociente % DECIMAL;
+                unidadeDeMilhar = restoDivisao;
+            }
+
+            Console.Write("Numero Criptografado: {2} {3} {0} {1}.", unidadeDeMilhar + 7, centena + 7, dezena + 7, unidade + 7);
+            Console.WriteLine("");
+            menu.VoltarMenu();
+
+        }
 
 
             //Questão 02
